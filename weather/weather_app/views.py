@@ -10,7 +10,7 @@ def get_weather(request):
     if not localizacion:
         return JsonResponse({'error': 'Debes especificar una localización'}, status=400)
     
-    api_key ='' # Aquí va tu API KEY de OpenWeatherMap
+    api_key ='059dca98c3a6e58e739c8a0d2716d00f' # Aquí va tu API KEY de OpenWeatherMap
     weather_api_url = f'https://api.openweathermap.org/data/2.5/weather?q={localizacion}&appid={api_key}&units=metric'
 
     try:
